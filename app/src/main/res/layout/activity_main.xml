@@ -116,4 +116,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.465" />
 
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        android:text="CE"
+        app:backgroundTint="#123E50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
