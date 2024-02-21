@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button subtraction;
     Button multiplication;
     Button division;
+    Button clear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         subtraction = (Button) findViewById(R.id.btnSub);
         division = (Button) findViewById(R.id.btnDiv);
         multiplication = (Button) findViewById(R.id.btnMul);
+        clear = (Button) findViewById(R.id.btnclear);
 
         addition.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +75,15 @@ public class MainActivity extends AppCompatActivity {
                 double div = myNum1 / myNum2;
 
                 result.setText(String.valueOf(div));
+            }
+        });
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num1.setText(" ");
+                num2.setText(" ");
+                result.setText("0");
+                result.setText(" ");
             }
         });
     }
